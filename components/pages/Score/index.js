@@ -72,14 +72,14 @@ const Score = ({ navigation, route }) => {
           <Text style={styles.caption}>QUIZ SELESAI!</Text>
           <Text style={styles.ceksoal}>{message}</Text>
 
-          <View style={{ flex: "" }}>
+          <View>
             <TouchableOpacity
               style={styles.btnretry}
               onPress={() => {
                 navigation.replace("Quiz", { currentPage: 0, answer: {} });
               }}
             >
-              Ulangi
+              <Text>Ulangi</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={styles.btnfinish}
@@ -87,7 +87,7 @@ const Score = ({ navigation, route }) => {
                 navigation.replace("Home");
               }}
             >
-              Selesai
+              <Text>Selesai</Text>
             </TouchableOpacity>
           </View>
         </View>

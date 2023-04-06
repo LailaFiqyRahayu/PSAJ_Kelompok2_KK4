@@ -71,56 +71,65 @@ export default function Home({navigation}) {
       >
         <Text style={styles.heading}>Era Reformasi</Text>
 
-        <TouchableOpacity
-          onPress={() => {
-            navigation.replace("Reformasi", { currentPage: 0, answer: {} });
-            setVisible(false);
-          }}
-          style={{
-            flex: 1,
-            backgroundColor: "#ffffff",
-            width: 212,
-            height: 55,
-            position: "absolute",
-            borderRadius: 10,
-            marginTop: 155,
-            marginHorizontal: 25,
-            justifyContent: "center",
-            elevation: 5,
-            zIndex: 3,
-            shadowColor: "black",
-            shadowOpacity: 10,
-            borderColor: "black",
-            borderWidth: 2,
-          }}
-        >
-          <Text style={styles.button}>Apa itu Era Reformasi?</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            backgroundColor: "#FFFFFF",
-            width: 48,
-            height: 50,
-            padding: 10,
-            borderRadius: 12,
-            alignItems: "center",
-            marginTop: 45,
-            marginLeft: 250,
-            shadowRadius: 3,
-            shadowColor: "black",
-
-            // alignContent:'Right'
-          }}
-          onPress={toggleDialog}
-        >
-          <Image
-            source={require("../../../assets/bx_menu-alt-left.png")}
-            style={{
-              width: 30,
-              height: 30,
+        <View>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.replace("Reformasi", { currentPage: 0, answer: {} });
+              setVisible(false);
             }}
-          />
-        </TouchableOpacity>
+            style={{
+              flex: 1,
+              backgroundColor: "#ffffff",
+              width: 225,
+              height: 55,
+              position: "absolute",
+              borderRadius: 10,
+              marginTop: 45,
+              alignSelf:"center",
+              justifyContent: "center",
+              elevation: 5,
+              zIndex: 3,
+              shadowColor: "black",
+              shadowOpacity: 10,
+              borderColor: "black",
+              borderWidth: 2,
+            }}
+          >
+            <Text style={styles.button}>Apa itu Era Reformasi?</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#FFFFFF",
+              width: 50,
+              height: 50,
+              padding: 10,
+              borderRadius: 12,
+              alignItems: "center",
+              alignSelf:"flex-end",
+              marginTop: 45,
+              marginEnd: 30,
+              shadowRadius: 3,
+              shadowColor: "black",
+              shadowOpacity: 10,
+              borderColor: "black",
+              borderWidth: 2,
+
+              // alignContent:'Right'
+            }}
+            onPress={() => {
+              navigation.replace("Quiz", { currentPage: 0, answer: {} });
+            }}
+          >
+            <Image
+              source={require("../../../assets/quiz.png")}
+              style={{
+                width: 30,
+                height: 30,
+                
+              }}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
 
       <SafeAreaView style={styles.container}>
@@ -140,10 +149,7 @@ export default function Home({navigation}) {
           />
         </View>
       </SafeAreaView>
-      <Dialog
-        isVisible={Visible}
-        onBackdropPress={toggleDialog}
-      >
+      <Dialog isVisible={Visible} onBackdropPress={toggleDialog}>
         <View
           style={{
             display: "flex",

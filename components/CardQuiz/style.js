@@ -5,7 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "left",
+    alignItems: "flex-start",
     paddingTop: 18,
   },
   soal: {

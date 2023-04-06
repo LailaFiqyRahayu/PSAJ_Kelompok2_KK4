@@ -17,20 +17,19 @@ export default StyleSheet.create({
     fontFamily: 'poppins',
     textAlign: 'center',
     color: 'white',
-    marginTop: 72
+    marginTop: 72,
   },
   textquiz: {
     fontSize: 24,
     fontWeight: 'bold',
-    fontFamily: 'poppins',
     color: 'black',
     alignItems: 'center',
     marginHorizontal: 60,
-    marginVertical: 14
+    marginVertical: 14,
   },
   body: {
     backgroundColor: 'white',
-        width: 290,
+        width: 365,
         height: 500,
         borderRadius: 15,
         marginHorizontal: 22,
@@ -40,11 +39,10 @@ export default StyleSheet.create({
   soal: {
     fontSize: 18,
     fontWeight: 'bold',
-    alignItems: 'center',
-    marginTop: 0,
+    alignItems: 'center'
   },
   option: {
-    alignItems: 'left',
+    alignItems: "flex-start",
     flex: 1
   },
   button: {
@@ -52,8 +50,8 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     padding :5,
-    marginHorizontal: 90,
-    marginVertical: 5,
+    marginHorizontal: 150,
+    marginVertical: 2,
     borderRadius: 5,
     width : 100,
     height: 50,
