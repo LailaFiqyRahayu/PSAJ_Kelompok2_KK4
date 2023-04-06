@@ -51,7 +51,7 @@ const Score = ({ navigation, route }) => {
         }}
       >
         <TouchableOpacity
-          style={{
+           style={{
             width: 170,
             height: 55,
             backgroundColor: "white",
@@ -62,9 +62,10 @@ const Score = ({ navigation, route }) => {
             elevation: 5,
             zIndex: 3,
             marginBottom: 20,
+            marginLeft: 120
           }}
         >
-          <Text style={styles.textquiz}>Quiz</Text>
+          <Text style={styles.textquiz}>Quiz Score</Text>
         </TouchableOpacity>
 
         <View style={styles.body}>

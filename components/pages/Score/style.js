@@ -30,12 +30,12 @@ export default StyleSheet.create({
   },
   body: {
     backgroundColor: 'white',
-    width: 290,
-    height: 500,
-    borderRadius: 15,
-    marginHorizontal: 22,
-    marginTop: 130,
-    justifyContent: 'center',
+        width: 365,
+        height: 500,
+        borderRadius: 15,
+        marginHorizontal: 22,
+        marginTop: 132,
+        justifyContent: 'center'
   },
   soal: {
     fontSize: 18,
@@ -65,7 +65,8 @@ export default StyleSheet.create({
     width: 100,
     height: 50,
     borderRadius: 10,
-    marginLeft: 90,
+    marginHorizontal: 130,
+    marginVertical: 8,
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 20,
@@ -73,11 +74,12 @@ export default StyleSheet.create({
   },
   btnfinish: {
     backgroundColor: '#54CE54',
+    marginHorizontal: 130,
+    marginVertical: 5,
     width: 100,
     height: 50,
     borderRadius: 10,
     marginTop: 20,
-    marginLeft: 90,
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'poppins',
@@ -86,13 +88,13 @@ export default StyleSheet.create({
   caption: {
     fontWeight: 'bold',
     fontSize: 22,
-    marginHorizontal: 60,
+    marginHorizontal: 100,
     marginVertical: 5,
     fontFamily: 'poppins',
   },
   ceksoal : {
     fontSize: 20,
-    marginHorizontal: 65,
+    marginHorizontal: 85,
     marginVertical: 8,
     fontFamily: 'poppins',
     alignItems : 'center'
